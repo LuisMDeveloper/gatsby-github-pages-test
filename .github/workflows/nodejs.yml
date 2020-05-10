@@ -31,3 +31,5 @@ jobs:
     - run: npm run deploy
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        GH_USER: "LuisMDeveloper"
+        GH_REPO: "gatsby-github-pages-test"
