@@ -22,6 +22,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - run: git config --global user.email "luis.manuel.ramirez.91@gmail.com"
+    - run: git config --global user.name "Luis Manuel Ramirez Vargas"
     - run: npm ci
     - run: npm run build --if-present
     - run: npm install -g gatsby-cli
